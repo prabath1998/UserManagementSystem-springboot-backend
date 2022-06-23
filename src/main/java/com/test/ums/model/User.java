@@ -1,21 +1,15 @@
-package com.test.ums.entity;
+package com.test.ums.model;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "users")
-public class UserEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class User {
     private long id;
     private String firstName;
     private String lastName;
     private String emailId;
 
-    public UserEntity() {
+    public User() {
     }
 
-    public UserEntity(long id, String firstName, String lastName, String emailId) {
+    public User(long id, String firstName, String lastName, String emailId) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
